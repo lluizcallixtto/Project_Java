@@ -131,6 +131,8 @@ public class Estrutura_Sequencial {
 		System.out.printf("Área: Trapézio .... %.3f%n", trapeze);
 		System.out.printf("Área: Quadrado .... %.3f%n", square);
 		System.out.printf("Área: Retângulo ... %.3f%n", rectangle);
+		
+		input.close();
 	}
 
 }
