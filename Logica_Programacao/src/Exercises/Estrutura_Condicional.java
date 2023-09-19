@@ -93,7 +93,7 @@ public class Estrutura_Condicional {
 			result = horarioInicio - horarioTermino;
 			verificacao = " O jogo durou " + result + "h";
 		} else if (horarioInicio < horarioTermino){
-			result = horarioInicio - horarioTermino + 24;
+			result = horarioTermino - horarioInicio;
 			verificacao = "O jogo durou " + result + "h";
 		} else {
 			verificacao = "O Jogo durou 24 hora(s)";
@@ -126,16 +126,20 @@ public class Estrutura_Condicional {
 		if (codigo == 1) {
 			total = qtde * 4.00;
 			verificacao = "Total R$" + total;
-		} else if (codigo == 2) {
+		} 
+		else if (codigo == 2) {
 			total = qtde * 4.50;
 			verificacao = "Total R$" + total;
-		} else if (codigo == 3) {
+		} 
+		else if (codigo == 3) {
 			total = qtde * 5.00;
 			verificacao = "Total R$" + total;
-		} else if (codigo == 4) {
+		} 
+		else if (codigo == 4) {
 			total = qtde * 2.00;
 			verificacao = "Total R$" + total;
-		} else if (codigo == 5) {
+		} 
+		else if (codigo == 5) {
 			total = qtde * 1.50;
 			verificacao = "Total R$ " + total;
 		}
@@ -149,46 +153,97 @@ public class Estrutura_Condicional {
 		System.out.println("Intervalos: [0,25] | (25,50] | (50,75] | (75,100] \n");
 		
 		//Input
-		System.out.print("Informe um número: ");
+		System.out.print("Digite um número: ");
 		double num6 = input.nextDouble();
 		
-		System.out.print("Informe outro número: ");
-		double num7 = input.nextDouble();
 		
 		//Processing 
-		
-		double min, max;
-
-        if (num6 < num7) {
-            min = num6;
-            max = num7;
-        } else {
-            min = num7;
-            max = num6;
-        }
-		
-		if (num6 >= 0 && num6 <= 25 && num7 >= 0 && num7 <= 25) {
-			verificacao = "Intervalo [0, 25]";
-		} else if (num6 >= 0 && num6 <= 25 && num7 >= 0 && num7 <= 25 &&
-				   num6 > 25 && num6 <= 50 && num7 > 25 && num7 <= 50) {
-			verificacao = "Intervalo (25, 50]";
-		} else if (num6 >= 0 && num6 <= 25 && num7 >= 0 && num7 <= 25 &&
-				   num6 > 25 && num6 <= 50 && num7 > 25 && num7 <= 50 &&
-				   num6 > 50 && num6 <= 75 && num7 > 50 && num7 <= 75) {
-			verificacao = "Intervalo (50, 75]";
-		} else if (num6 >= 0 && num6 <= 25 && num7 >= 0 && num7 <= 25 &&
-				   num6 > 25 && num6 <= 50 && num7 > 25 && num7 <= 50 &&
-				   num6 > 50 && num6 <= 75 && num7 > 50 && num7 <= 75 &&
-				   num6 > 75 && num6 <= 100 && num7 > 75 && num7 <= 100) {
-			verificacao = "Intervalo (75, 100]";
-		} else {
-			verificacao = "Fora de Intervalo"; 
+		if (num6 < 0.00 || num6 > 100.00) { 
+			verificacao = "Fora do Intervalo";
+		} 
+		else if (num6 <= 25.00) {
+			verificacao = "Intervalo [0,25]";
+		} 
+		else if (num6 <= 50.00) {
+			verificacao = "Intervalo (25,50]";
+		}
+		else if (num6 <= 75.00) { 
+			verificacao = "Intervalo (50,75]";
+		}
+		else {
+			verificacao = "Intervalo (75,100]";
 		}
 		
 	   //Output
 		System.out.println(verificacao);
+		verificacao = String.format("%.2f", num6);
+		System.out.println(verificacao);
 		System.out.println();
-			
+	   
+	   //Exercise 07
+	   System.out.println("Plano Cartesiano | Quadrantes");
+	   
+	   //input
+	   System.out.print("Digite um número (Eixo X): ");
+	   double eixoX = input.nextDouble();
+	   
+	   System.out.print("Digite um número (Eixo Y): ");
+	   double eixoY = input.nextDouble();
+	   
+	   //Processing 
+	   if (eixoX == 0 && eixoY == 0) {
+		   verificacao = "Origem";
+	   }
+	   else if (eixoX > 0 && eixoY > 0) {
+		   verificacao = "Q1";
+	   }
+	   else if (eixoX < 0 && eixoY > 0) {
+		   verificacao = "Q2";
+	   }
+	   else if (eixoX < 0 && eixoY < 0) {
+		   verificacao = "Q3";
+	   }
+	   else if (eixoX > 0 && eixoY <0) {
+		   verificacao = "Q4";
+	   }
+	  
+	  //Output
+	  System.out.println(verificacao);
+	  System.out.println();
+		
+     //Exercise 08
+	 System.out.println("Imposto de Renda");
+	 
+	 //Input
+	 System.out.print("Informe seu salário: ");
+	 double salario = input.nextDouble();
+	 
+	 //Processing
+	 double imposto;
+	 if (salario <= 2000.0) {
+		 imposto = 0.0;
+	 }
+	 else if (salario <= 3000.0) {
+		 imposto = (salario - 2000.0) * 0.08;
+	 }
+	 else if (salario <= 4500.0) {
+		 imposto = (salario - 3000.0) * 0.18 + 1000.0 * 0.08;
+	 }
+	 else {
+		 imposto = (salario - 4500) * 0.28 + 1500.0 * 0.18 + 1000.0 * 0.08;
+	 }
+	 
+	 if (imposto == 0.0) {
+		 verificacao = "Insento"; 
+	 }
+	 else {
+		 verificacao = String.format("%.2f", imposto);
+	 }
+	 
+	 //Output
+	 System.out.println(verificacao);
+	 System.out.println();
+		
 		
      input.close();
 	}
