@@ -9,15 +9,15 @@ public class Estrutura_Condicional {
 		String verificacao;
 		
 		//Exercise 01 
-		System.out.println("VerificaÁ„o: N˙mero Negativo");
+		System.out.println("Verifica√ß√£o: N√∫mero Negativo");
 		
 		//Input
-		System.out.print("Digite um n˙mero: ");
+		System.out.print("Digite um n√∫mero: ");
 		int num1 = input.nextInt();
 		
 		//Processing
 		if (num1 > 0) {
-			verificacao = "N„o Negativo";
+			verificacao = "N√£o Negativo";
 		} else if (num1 < 0) {
 			verificacao = "Negativo";
 		} else {
@@ -29,17 +29,17 @@ public class Estrutura_Condicional {
 		System.out.println();
 		
 		//Exercise 02
-		System.out.println("VerificaÁ„o: N˙mero Par ou Õmpar");
+		System.out.println("Verifica√ß√£o: N√∫mero Par ou √çmpar");
 		
 		//Input
-		System.out.print("Digite um n˙mero: ");
+		System.out.print("Digite um n√∫mero: ");
 		int num2 = input.nextInt();
 		
 		//Processing
 		if (num2%2 == 0) {
 			verificacao = "Par";
 		} else {
-			verificacao = "Õmpar";
+			verificacao = "√çmpar";
 		}
 		
 		//Output
@@ -47,31 +47,31 @@ public class Estrutura_Condicional {
 		System.out.println();
 		
 		//Exercise 03
-		System.out.println("VerificaÁ„o: N˙meros s„o M˙ltiplos");
+		System.out.println("Verifica√ß√£o: N√∫meros s√£o M√∫ltiplos");
 		
 		//Input
-		System.out.print("Digite um n˙mero: ");
+		System.out.print("Digite um n√∫mero: ");
 		int num3 = input.nextInt();
-		System.out.print("Digite um n˙mero: ");
+		System.out.print("Digite um n√∫mero: ");
 		int num4 = input.nextInt();
 		
 		//Processing
 		int aux1;
 		if (num3%num4 == 0) {
-			verificacao = "S„o M˙tiplos";
+			verificacao = "S√£o M√∫tiplos";
 		} else if (num3 < num4){
 			aux1 = num3;
 			num3 = num4;
 			num4 = aux1;
 			
 			if(num3%num4 == 0) {
-				verificacao = "S„o M˙tiplos";
+				verificacao = "S√£o M√∫tiplos";
 			}
 			if (num3%num4 != 0) {
-				verificacao = "N„o s„o MultÌplos";
+				verificacao = "N√£o s√£o M√∫ltiplos";
 			}	
 		} else if (num3%num4 != 0) {
-			verificacao = "N„o s„o MultÌplos";
+			verificacao = "N√£o s√£o M√∫ltiplos";
 		}
 		
 		//Output
@@ -79,12 +79,12 @@ public class Estrutura_Condicional {
 		System.out.println();
 		
 		//Exercise 04
-		System.out.println("DiferenÁa entre Horas");
+		System.out.println("Diferen√ßa entre Horas");
 		
 		//Input
-		System.out.print("Informe o hor·rio de inÌcio: ");
+		System.out.print("Informe o hor√°rio de in√≠cio: ");
 		int horarioInicio = input.nextInt();
-		System.out.print("Informe o hor·rio de tÈrmmino: ");
+		System.out.print("Informe o hor√°rio de t√©rmino: ");
 		int horarioTermino = input.nextInt();
 		
 		//Processing
@@ -105,16 +105,16 @@ public class Estrutura_Condicional {
 		
 		//Exercise 05
 		System.out.println("Lanchonete");
-		System.out.println("CÛdigo || EspecificaÁ„o ||  PreÁo ");
+		System.out.println("C√≥digo || Especifica√ß√£o ||  Pre√ßo ");
 		System.out.println("  1          Hot-Dog       R$ 4,00 ");
 		System.out.println("  2          X-Salad       R$ 4,50 ");
 		System.out.println("  3          X-Bacon       R$ 5,00 ");
 		System.out.println("  4          Toast         R$ 2,00 ");
-		System.out.println("  5          Refrigerator  R$ 1,50 \n");
+		System.out.println("  5          Refrigerante  R$ 1,50 \n");
 		
 		
 		//Input
-		System.out.print("Informe seu cÛdigo: ");
+		System.out.print("Informe seu c√≥digo: ");
 		int codigo = input.nextInt();
 		
 		System.out.print("Informe a quantidade: ");
@@ -149,11 +149,11 @@ public class Estrutura_Condicional {
 		System.out.println();
 		
 		//Exercise 06
-		System.out.println("VerificaÁ„o de Intervalo");
+		System.out.println("Verifica√ß√£o de Intervalo");
 		System.out.println("Intervalos: [0,25] | (25,50] | (50,75] | (75,100] \n");
 		
 		//Input
-		System.out.print("Digite um n˙mero: ");
+		System.out.print("Digite um n√∫mero: ");
 		double num6 = input.nextDouble();
 		
 		
@@ -184,10 +184,10 @@ public class Estrutura_Condicional {
 	   System.out.println("Plano Cartesiano | Quadrantes");
 	   
 	   //input
-	   System.out.print("Digite um n˙mero (Eixo X): ");
+	   System.out.print("Digite um n√∫mero (Eixo X): ");
 	   double eixoX = input.nextDouble();
 	   
-	   System.out.print("Digite um n˙mero (Eixo Y): ");
+	   System.out.print("Digite um n√∫mero (Eixo Y): ");
 	   double eixoY = input.nextDouble();
 	   
 	   //Processing 
@@ -215,7 +215,7 @@ public class Estrutura_Condicional {
 	 System.out.println("Imposto de Renda");
 	 
 	 //Input
-	 System.out.print("Informe seu sal·rio: ");
+	 System.out.print("Informe seu sal√°rio: ");
 	 double salario = input.nextDouble();
 	 
 	 //Processing
@@ -243,7 +243,83 @@ public class Estrutura_Condicional {
 	 //Output
 	 System.out.println(verificacao);
 	 System.out.println();
-		
+	 
+	 //Exercise - Example
+	 System.out.println("Empresa CallMe - Consulte seu Plano de acordo com minutos de liga√ß√µes");
+	 System.out.println();
+	 
+	 //Input
+	 System.out.print("Informe quantos minutos utilizados: ");
+	 int minutos = input.nextInt();
+	 
+	 //Processing
+	 double conta = 50.0;
+	 if (minutos > 100) {
+		 conta += (minutos - 100) * 2.0;
+	 }
+	 verificacao = String.format("Valor da conta = R$ %.2f", conta);
+	 
+	 //Output
+	 System.out.println(verificacao);
+	 System.out.println();
+	 
+	 //Exercise - Example
+	 System.out.println("Week Good \n");
+	 
+	 //Input
+	 System.out.print("Digite de 1 a 7 para saber o dia da semana: ");
+	 int num7 = input.nextInt();
+	 
+	 //Processing
+	 String dia;
+	 switch (num7){
+	 case 1: 
+		 dia = "Domingo";
+		 break;
+	 case 2: 
+		 dia = "Segunda-feira";
+		 break;
+	 case 3: 
+		 dia = "Ter√ßa-feira";
+		 break;
+	 case 4: 
+		 dia = "Quarta-feira";
+		 break;
+	 case 5: 
+		 dia = "Quinta-feira";
+		 break;
+	 case 6: 
+		 dia = "Sexta-feira";
+		 break;
+	 case 7: 
+		 dia = "S√°bado";
+		 break;
+	 default: 
+		 dia = "Valor Inv√°lido";
+		 break;
+	 }
+	 verificacao = dia;
+	 
+	 //Output
+	 System.out.println(verificacao);
+	 System.out.println();
+	 
+	 //Exercise - Example 
+	 System.out.println("Descont√£o: produtos custando menos de R$ 20,00 com 10% de desconto \n"
+	 		          + "produtos custando mais de R$ 20,00 com 5% de desconto \n");
+	 
+	 //Input
+	 System.out.print("Informe o pre√ßo do seu produto: ");
+	 double preco = input.nextInt();
+	 
+	 //Processing
+	 double desconto = (preco < 20.0) ? preco * 0.1 : preco * 0.05;
+	 double valorTotal = preco - desconto;
+	 verificacao = String.format("Valor Total R$ %.2f", valorTotal);
+	 
+	 //Output
+	 System.out.println(verificacao);
+	 System.out.println();
 		
      input.close();
 	}
