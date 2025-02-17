@@ -12,7 +12,7 @@ public class Estrutura_Condicional {
 		System.out.println("Verificação: Número Negativo");
 		
 		//Input
-		System.out.print("Digite um número: ");
+		System.out.print("Digite um número: "); 
 		int num1 = input.nextInt();
 		
 		//Processing

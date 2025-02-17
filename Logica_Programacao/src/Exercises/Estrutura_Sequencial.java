@@ -8,24 +8,24 @@ public class Estrutura_Sequencial {
         Scanner input = new Scanner (System.in);
 		
 		// Exercise 01 
-		System.out.println("Soma de n˙meros inteiros");
+		System.out.println("Soma de n√∫meros inteiros");
 		
-		// 1∞ input  
-		System.out.print("Informe 1∞ n˙mero: ");
+		// 1ÔøΩ input  
+		System.out.print("Informe 1¬∞ n√∫mero: ");
 		int num1 = input.nextInt();
-		// 2∞ input
-		System.out.print("Informe o 2∞ n˙mero: ");
+		// 2ÔøΩ input
+		System.out.print("Informe o 2¬∞ n√∫mero: ");
 		int num2 = input.nextInt();
 		
 		//Processing
 		int resul1 = num1 + num2;
 		
 		//Output
-		System.out.println("SOMA = " + resul1);
+		System.out.println("SOMA = " + resul1); 
 		System.out.println();
 		
 		//Exercise 02
-		System.out.println("¡rea do CÌrculo");
+		System.out.println("√Årea do C√≠rculo");
 		
 		//Input
 		System.out.print("Informe o raio: ");
@@ -36,38 +36,38 @@ public class Estrutura_Sequencial {
 		double result2 = PI * raio * raio;
 		
 		//Output
-		System.out.printf("¡rea = %.4f%n ", result2);
+		System.out.printf("√Årea = %.4f%n ", result2);
 		System.out.println();
 		
 		//Exercise 03
-		System.out.println("A diferanÁa dos produtos");
+		System.out.println("A diferan√ßa dos produtos");
 		
 		//Input
-		System.out.print("Informe o 1∞ n˙mero: ");
+		System.out.print("Informe o 1¬∞ n√∫mero: ");
 		int a = input.nextInt();
-		System.out.print("Informe o 2∞ n˙mero: ");
+		System.out.print("Informe o 2¬∞ n√∫mero: ");
 		int b = input.nextInt();
-		System.out.print("Informe o 3∞ n˙mero: ");
+		System.out.print("Informe o 3¬∞ n√∫mero: ");
 		int c = input.nextInt();
-		System.out.print("Informe o 4∞ n˙mero: ");
+		System.out.print("Informe o 4¬∞ n√∫mero: ");
 		int d = input.nextInt();
 		
 		//Processing 
 		int result3 = (a * b) - (c * d);
 		
 		//Output
-		System.out.println("DIFERAN«A = " + result3);
+		System.out.println("DIFERAN√áA = " + result3);
 		System.out.println();
 		
 		//Exercise 04
-		System.out.println("Seu Sal·rio");
+		System.out.println("Seu Sal√°rio");
 		
 		//Input
-		System.out.print("Informe seu n˙mero: ");
+		System.out.print("Informe seu n√∫mero: ");
 		int number = input.nextInt();
 		System.out.print("Informe quantas horas trabalhadas hoje: ");
 		double hour = input.nextDouble();
-		System.out.print("Informe seu s·lario por hora trabalhadas: ");
+		System.out.print("Informe seu s√°lario por hora trabalhadas: ");
 		double salary = input.nextDouble();
 		
 		//Processing
@@ -79,24 +79,24 @@ public class Estrutura_Sequencial {
 		System.out.println();
 		
 		//Exercise 05
-		System.out.println("PeÁas Automotivas");
+		System.out.println("Pe√ßas Automotivas");
 		
 		//Input
-		System.out.println("1∞ PE«A");
-		System.out.print("Informe o cÛdigo: ");
+		System.out.println("1¬∞ PE√áA");
+		System.out.print("Informe o c√≥digo: ");
 		int code1 = input.nextInt();
-		System.out.print("Informe a quantidade de peÁas: ");
+		System.out.print("Informe a quantidade de pe√ßas: ");
 		int qtde1 = input.nextInt();
-		System.out.print("Informe seu valor unit·rio: ");
+		System.out.print("Informe seu valor unit√°rio: ");
 		double value1 = input.nextDouble();
 		System.out.println();
 		
-		System.out.println("2∞ PE«A");
-		System.out.print("Informe o cÛdigo: ");
+		System.out.println("2¬∞ PE√áA");
+		System.out.print("Informe o c√≥digo: ");
 		int code2 = input.nextInt();
-		System.out.print("Informe a quantidade de peÁas: ");
+		System.out.print("Informe a quantidade de pe√ßas: ");
 		int qtde2 = input.nextInt();
-		System.out.print("Informe seu valor unit·rio: ");
+		System.out.print("Informe seu valor unit√°rio: ");
 		double value2 = input.nextDouble();
 		
 		//Processing
@@ -107,15 +107,15 @@ public class Estrutura_Sequencial {
 		System.out.println();
 		
 		//Exercise 06
-		System.out.println("Vamos calcular! As ·reas: ");
-		System.out.println("Tri‚ngulo | TrapÈzio | CÌrculo | Quadrado | Ret‚ngulo");
+		System.out.println("Vamos calcular! As √°reas: ");
+		System.out.println("Tri√¢ngulo | Trap√©zio | C√≠rculo | Quadrado | Ret√¢ngulo");
 		
 		//Input
-		System.out.print("Informe o 1∞ n˙mero: ");
+		System.out.print("Informe o 1¬∞ n√∫mero: ");
 		double x = input.nextDouble();
-		System.out.print("Informe o 2∞ n˙mero: ");
+		System.out.print("Informe o 2¬∞ n√∫mero: ");
 		double y = input.nextDouble();
-		System.out.print("Informe o 3∞ n˙mero: ");
+		System.out.print("Informe o 3¬∞ n√∫mero: ");
 		double z = input.nextDouble();
 		
 		//Processing
@@ -126,11 +126,11 @@ public class Estrutura_Sequencial {
 		double rectangle = x * y;
 		
 		//Output
-		System.out.printf("¡rea: Tri‚ngulo ... %.3f%n", triangle);
-		System.out.printf("¡rea: cÌrculo ..... %.3f%n", circle);
-		System.out.printf("¡rea: TrapÈzio .... %.3f%n", trapeze);
-		System.out.printf("¡rea: Quadrado .... %.3f%n", square);
-		System.out.printf("¡rea: Ret‚ngulo ... %.3f%n", rectangle);
+		System.out.printf("√Årea: Tri√¢ngulo ... %.3f%n", triangle);
+		System.out.printf("√Årea: c√≠rculo ..... %.3f%n", circle);
+		System.out.printf("√Årea: Trap√©zio .... %.3f%n", trapeze);
+		System.out.printf("√Årea: Quadrado .... %.3f%n", square);
+		System.out.printf("√Årea: Ret√¢ngulo ... %.3f%n", rectangle);
 		
 		input.close();
 	}
